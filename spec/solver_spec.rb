@@ -15,11 +15,11 @@ describe Solver do
     factorial2 = solver.factorial(input_number2)
 
     it 'returns the factorial of 8 (40320)' do
-      expect(factorial2).to eql(40320)
+      expect(factorial2).to eql(40_320)
     end
 
     it 'raises an exeption when receiving a negative number (-1)' do
-      expect{solver.factorial(-1)}.to raise_error(ArgumentError)
+      expect { solver.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
 
@@ -91,5 +91,5 @@ describe Solver do
         expect(result2).to eql('fizzbuzz')
       end
     end
-  end 
+  end
 end
